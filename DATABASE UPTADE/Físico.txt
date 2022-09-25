@@ -1,0 +1,23 @@
+create database atividadecrud_MVC;
+use atividadecrud_MVC;
+
+CREATE TABLE Usuario (
+id_usuario INTEGER PRIMARY KEY auto_increment,
+nome VARCHAR(50),
+senha VARCHAR(50),
+email VARCHAR(50),
+endereco VARCHAR(50)
+);
+
+CREATE TABLE Passagem (
+id_passagem INTEGER PRIMARY KEY auto_increment,
+empresa VARCHAR(50),
+embarque VARCHAR(50),
+desembarque VARCHAR(50),
+valor_passagem DECIMAL(6)
+);
+
+CREATE TABLE Destino (
+id_destino INTEGER PRIMARY KEY auto_increment,
+nome_destino VARCHAR(50)
+);
